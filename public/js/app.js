@@ -21,7 +21,7 @@ weatherForm.addEventListener("submit", (e) => {
         }else {
             console.log(data.forecast.temperature, data.forecast.description);
             messageOne.textContent = "";
-            messageTwo.textContent = "It is " + data.forecast.description + ". The temperature is " + data.forecast.temperature + "° F";
+            messageTwo.textContent = "It is " + data.forecast.description + ". The temperature is " + data.forecast.temperature + "° F. The wind speed is " + data.forecast.windSpeed + " mph.";
         }
         })
     })
